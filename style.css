@@ -1,0 +1,243 @@
+/*used * element to select all the elements on the page*/
+*{
+    margin: auto;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+   
+}
+
+body{
+    /*displays the garnet color in the background*/
+    background-color: #660000;
+    color: white;
+}
+
+
+/*logo*/
+#logo{
+    position: absolute;
+}
+
+/*nav bar*/
+/*creates a black box around the navigation options*/
+nav{
+    background-color:black;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav ul a {
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+    font: bold;
+    display: inline-block;
+}
+
+.socialmedia{
+        margin-top: -50px;
+        margin-left: 1250px;
+        margin-right: 5px;
+        float:left;
+    }
+/*canges pointed when you hover to show you can click to submit*/
+ul a::hover{
+    background-color: #9ae39a;
+    color: #9ae39a;
+}
+
+/*images*/
+#wic img{
+    position: absolute;
+}
+
+p{
+    margin: auto;
+}
+
+/*Events - Calendar*/
+      .month {
+        padding: 70px 25px;
+        width: 100%;
+        background: #660000;
+        text-align: center;
+        margin-right: 20px;
+        margin-left: 60px;
+        width:1000px;
+      }
+
+      .month ul {
+        margin: 0;
+        padding: 0;
+      }
+
+      .month ul li {
+        color: white;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        list-style-type: none;
+      }
+
+      .month .prev {
+        float: left;
+        padding-top: 10px;
+      }
+
+      .month .next {
+        float: right;
+        padding-top: 10px;
+      }
+
+      .weekdays {
+        padding: 10px 0;
+        background-color: #ddd;
+        margin-right: 20px;
+        margin-left: 60px;
+        width:1000px;
+        height: 70px;
+      }
+
+      .weekdays li {
+        display: inline-block;
+        width: 13.5%;
+        color: #666666;
+        text-align: center;
+      }
+
+      .days {
+        padding: 30px 0;
+        background: #eee;
+        margin-right: 20px;
+        margin-left: 60px;
+        width:1000px;
+        height: 400px;
+      }
+
+      .days li {
+        list-style-type: none;
+        display: inline-block;
+        width: 13.5%;
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 12px;
+        color:#666666;
+      }
+
+      .days li .active {
+        padding: 5px;
+        background: #660000;
+        color: white !important;
+      }
+
+      .prev{
+        margin-right: 20px;
+        margin-left: 40px;
+      }
+
+      .next{
+        margin-right: 60px ;
+        margin-left: 60px;
+      }
+
+      .calendar{
+        float: left;
+
+      }
+
+      .key{
+        font-size: 20px;
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-top: 280px;
+        margin-bottom: 150px;
+      }
+
+      .image{
+        margin-right: 40px;
+        margin-left: 40px;
+      }
+
+/*footer*/
+.flogos{
+        margin-top:-10px;
+    }
+
+.plogos{
+        font-size: 20px;
+    }
+
+img{
+    float: left;
+}
+
+p{
+    font-size: 30px;
+}
+.col-3 p{
+    font-size: 20px;
+}
+
+.footer{
+    margin-top: 150px;
+    width: 100%;
+    /*padding to help the button stand out more*/
+    padding: 100px 15%;
+    color:white;
+    /*it aligns like column or rows with auto width and height*/
+    display: flex;
+    background-color:black;
+}
+
+.footer div{
+    text-align: center;
+}
+
+.col a{
+    display: block;
+    text-decoration: none;
+    color:white;
+    margin-bottom: 10px;
+}
+
+/*FAQ's*/
+.layout{
+            width: 900px;
+            margin: auto;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .accordion{
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background:black;
+            border-radius: 10px;
+        }
+        .accordion__question p{
+            margin: 5px;
+            padding: 0;
+            font-family: Verdana;
+            font-size: 20px;
+        }
+        .accordion__answer p{
+            margin: 5px;
+            padding: 10px;
+            font-size: large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(255, 255, 255);
+            background:black;
+            border-radius: 10px; 
+        }
+        .accordion:hover{
+            cursor: pointer;
+        }
+        .accordion__answer {
+            display: none;
+        } 
+        .accordion.active .accordion__answer {
+            display: block;
+        }

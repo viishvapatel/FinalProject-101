@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Donate</title>
+    <link rel="icon" type="" href="/images/favicon.ico" />
+    <meta charset="utf-8">
+  </head>
+
+  <!--this is an embeded style sheet becasue we added the CSS under a style tag-->
+  <style>
+    h1 {
+      color: black;
+      font-size: 70px;
+      font-weight: bold;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      /*puts header in the center of the page*/
+      text-align: center;
+      /*adds a garnet shadow to the header*/
+      text-shadow: 3px 3px 3px white;
+      text-decoration: underline;
+    }
+
+    .block {
+      display: block;
+      width: 20%;
+      border: 3px solid white;
+      background-color: black;
+      /*padding to help the button stand out more*/
+      padding: 7px 20px;
+      font-size: 30px;
+      /*changes pointed when you hover to show you can click to submit-W3Schools*/
+      cursor: pointer;
+      text-align: center;
+      color: white;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+  </style>
+
+  <body>
+    <div id="wrapper">
+      <!--<a href="main-content" id="skip-link"> skip to the main main-content</a>-->
+      <header role="banner">
+        <h1>
+          <img src="images/logo.png" alt="logo" width="110" height="50" />
+        </h1>
+        <nav role="navigation">
+          <ul>
+            <li><a href="index.html" id="current-page0">Home</a></li>
+            <li><a href="connect.html" id="current-page3">Connect</a></li>
+            <li><a href="events.html" id="current-page2">Events</a></li>
+            <li><a href="support.html" id="current-page5">Support</a></li>
+            <li><a href="more.html" id="current-page4">More</a></li>
+          </ul>
+          <img src="images/3logoss.png" width="150" height="50" class="socialmedia">
+        </nav>
+      </header>
+    </div>
+    <br><br>
+
+    <div style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+          'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: #660000;
+        color: white;
+        border: 5px solid black;
+        font-size: 30px; margin-left:50px; margin-right:50px;
+        text-align: center;"><p>
+      Women In Computing is an organization that started in 2014 at UofSC aiming
+      to help women in computing create a space to meet others within their
+      major. WIC helps students with their career needs so we ask you to
+      contribute if you can and it will help students to get more hands-on
+      experience outside of their classes, travel expenses when we take our
+      students to events, professional outings, and access to different tools
+      and software to make learning fun!
+    </p> </div>
+    <br><br>
+
+    <div
+      style="
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+          'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: #660000;
+        color: white;
+        border: 5px solid black;
+        font-size: 30px;
+        margin-left:50px; margin-right:50px;
+        text-align: center;"
+    >
+      <h1>Donations</h1>
+
+      <form
+        action="https://wp.zybooks.com/form-viewer.php"
+        method="POST"
+        enctype="multipart/form-data"
+        target="_blank"
+      >
+        <div>
+          <label for="m_fullName">Full name:</label>
+          <input type="text" name="fullName" id="m_fullName" />
+        </div>
+
+        <div>
+          <label for="m_email">Email address:</label>
+          <input type="text" name="email" id="m_email" />
+        </div>
+
+        <div>
+          <label for="m_phone">Phone number (optional):</label>
+          <input type="text" name="phone" id="m_phone" />
+        </div>
+
+        <div>
+          <label for="m_payment">Payment Method:</label>
+          <input type="text" name="payment" id="m_payment" />
+        </div>
+
+        <div>
+          <button type="button" class="block">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+      <div class="col-1">
+        <img src="images/logo.png" alt="logo" width="110" height="50">
+        <br><br><br>
+        <p class="plogos">Follow our socials below.</p>
+        <br>
+        <img src="images/3logoss.png" width="160" height="60" class="flogos">
+      </div>
+    
+      <div class="col-2">
+        <h3> Newsletter</h3>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" placeholder="Name" id="name">
+          <br>
+          <label for="email">Email:</label>
+          <input type="text" placeholder="Email Address" id="email">
+          <br>
+          <label for="schoolemail">School Email:</label>
+          <input type="text" placeholder="Email Address" id="schoolemail">
+          <br>
+          <label for="phone">Phone:</label>
+          <input type="text" placeholder="phone number" id="phone">
+          <br>
+          <button type="button">Sign up</button>
+        </form>
+      </div>
+    
+      <div class="col-3" style="font-size: 5px;">
+        <p>Contact Information:</p>
+        <p>Phone Number: 333-333-3333</p>
+        <p>Email: wicatuofsc@email.sc.edu</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Women In Computing</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta charset="utf-8">
+    <style>
+        
+    </style>
+    
+</head>
+<body>
+    <!--header-->
+    <div id="wrapper">
+        <!--<a href="main-content" id="skip-link"> skip to the main main-content</a>-->
+        <header role="banner">
+            <h1><img src="images/logo.png" alt="logo" width="110" height="50"></h1>
+            <nav role="navigation">
+                <ul>
+                    <li><a href="index.html" id="current-page0">Home</a></li>
+                    <li><a href="connect.html" id="current-page3">Connect</a></li>
+                    <li><a href="events.html" id="current-page2">Events</a></li>
+                    <li><a href="support.html" id="current-page5">Support</a></li>
+                    <li><a href="more.html" id="current-page4">More</a></li>
+                </ul>
+            <img src="images/3logoss.png" width="150" height="50" class="socialmedia">
+            </nav>
+        </header>
+    </div><br><br>
+
+    <h1 style="color:black;
+            font-size: 70px;
+            font-weight: bold;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            /*puts header in the center of the page*/
+            text-align: center;
+            /*adds a garnet shadow to the header*/
+            text-shadow: 3px 3px 3px white;
+            text-decoration: underline;">FAQ's</h1>
+            <br><br><br>
+    <div class="layout">
+        <div class="accordion">
+            <div class="accordion_question">
+                <p>How often are meetings held?</p>
+            </div>
+            <div class="accordion_answer">
+                <p>- Meetings are held atleast once a week, but there could be times where we won’t hold meetings every week so please join
+                group me for updates.</p>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion_question">
+                <p>How long are meetings?</p>
+            </div>
+            <div class="accordion_answer">
+                <p>- Meetings are about 1 to 2 hours long.</p>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion_question">
+                <p>How long is membership/ Are there dues?</p>
+            </div>
+            <div class="accordion_answer">
+                <p>- No, it's free to students! This is a club for students to learn how to find opportunities in the tech field.</p>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion_question">
+                <p>I want to be more involved/ on executive board? Do I need to major in computing to be able to join?</p>
+            </div>
+            <div class="accordion_answer">
+                <p>- No you don’t have to, we welcome all majors.</p>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion_question">
+                <p>What room are meetings in?</p>
+            </div>
+            <div class="accordion_answer">
+                <p>- Meetings are located in the Innovation center in room 2277 at 6:00pm on Mondays.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="col-1" style="font-size: 15px; text-align: left;">
+            <img src="images/logo.png" alt="logo" width="110" height="50">
+            <br><br><br>
+            <p class="plogos">Follow our socials below.</p>
+            <br>
+            <img src="images/3logoss.png" width="160" height="60" class="flogos">
+            <!--<img src="images/iglogo.jpeg" width="50" height="50">
+           <img src="images/fblogo.webp" width="70" height="50"> -->
+        </div>
+    
+        <div class="col-2">
+            <h3> Newsletter</h3>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" placeholder="Name" id="name">
+                <br>
+                <label for="email">Email:</label>
+                <input type="text" placeholder="Email Address" id="email">
+                <br>
+                <label for="schoolemail">School Email:</label>
+                <input type="text" placeholder="Email Address" id="schoolemail">
+                <br>
+                <label for="phone">Phone:</label>
+                <input type="text" placeholder="phone number" id="phone">
+                <br>
+                <button type="button">Sign up</button>
+            </form>
+        </div>
+    
+        <div class="col-3" style="font-size: 5px;">
+            <p>Contact Information:</p>
+            <p>Phone Number: 333-333-3333</p>
+            <p>Email: wicatuofsc@email.sc.edu</p>
+        </div>
+    </div>
+    <script>
+        let answers = document.querySelectorAll(".accordion");
+        answers.forEach((event) => {
+            event.addEventListener('click', () => {
+                if (event.classList.contains("active")) {
+                    event.classList.remove("active");
+                }
+                else {
+                    event.classList.add("active");
+                }
+            })
+        })
+    </script>
+    
+</body>
+</html>
